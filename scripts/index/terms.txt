@@ -1,0 +1,169 @@
+employment
+unemployment
+economic activity rate|inactivity
+GDP|gross domestic product
+GNI|gross national income
+GVA|gross value added
+investment
+sectoral balance|PLURAL
+deflator|PLURAL
+CPI|consumer prices index|CPIH
+population density
+census|PLURAL
+uncertainty
+bias|PLURAL
+MP|PLURAL|member of parliament
+MSP|PLURAL|member of the scottish parliament
+MEP|PLURAL|member of the european parliament
+councillor|PLURAL
+identity|PLURAL
+place of birth
+ethnicity|PLURAL
+population growth
+immigration
+emigration
+natural change
+Scottish Household Survey
+Scottish Social Attitudes Survey
+language|PLURAL
+scots
+picts
+gaelic
+home price|PLURAL
+infrastructure
+renewable|PLURAL
+electricity
+unit|PLURAL
+watt|MW|GW|TW|PLURAL
+wind power
+hydroelectric
+pumped storage|pump storage
+fracking
+national grid
+interconnector|PLURAL
+target|PLURAL
+water|see Scottish Water
+Scottish Water|PLURAL
+rail|railway|railways|train|PLURAL
+nationalise|nationalisation|PLURAL|nationalising
+privatise|privatisation|PLURAL|privatising
+world war|PLURAL
+car|PLURAL
+bus|PLURAL
+freight
+shipping
+ferry|PLURAL
+cycling|bicycle|PLURAL|bike|PLURAL
+internet|broadband
+household income
+wealth|see household wealth
+household wealth
+absolute poverty
+relative poverty
+extreme poverty
+wealth inequality|PLURAL|inequality of wealth
+income inequality|PLURAL|inequality of income
+redistribution
+primary school|PLURAL
+secondary school|PLURAL
+college|PLURAL
+university
+pupil|PLURAL
+student|PLURAL
+teacher|PLURAL|teaching
+hospital|PLURAL
+doctor|PLURAL
+nurse|PLURAL
+lawyer|PLURAL
+crime|PLURAL
+law|PLURAL
+court|PLURAL
+police
+fire
+tuition fee|PLURAL
+student loan|PLURAL
+fiscal policy
+monetary policy
+public spending|see TME, AME, DEL or GERS
+TME|total managed expenditure
+AME|annual managed expenditure
+DEL|departmental expenditure limits
+public revenue|PLURAL
+income tax
+VAT
+corporation tax
+budget deficit|fiscal deficit
+deficit|see budget deficit or net fiscal balance
+net fiscal balance
+Scottish budget|PLURAL
+devolution|devolved
+reserved
+public debt
+Scottish Fiscal Commission
+bonds
+gilts
+borrowing
+currency|PLURAL
+oil price
+economic growth|GDP growth
+imports
+exports
+trade deficit
+current account
+balance of payments
+nominal
+trade union|PLURAL
+earnings
+referendum|PLURAL
+first past the post|PLURAL
+proportional representation|PLURAL
+single transferrable vote|PLURAL
+turnout
+labour party|PLURAL|lab
+conservative|PLURAL|tory|PLURAL
+liberal democrat|PLURAL|LD|lib dems
+SNP|PLURAL|scottish national party
+green party|greens
+independents
+UKIP|PLURAL|united kingdom independence party
+brexit|PLURAL
+EU|european union
+David Cameron|Cameron|PLURAL
+Alex Salmond|Salmond|PLURAL
+Nicola Sturgeon|Sturgeon|PLURAL
+Tony Blair|Blair|PLURAL
+Margaret Thatcher|Thatcher|PLURAL
+Gordon Brown|Brown|PLURAL
+HM Treasury|Treasury|treasurys
+ONS|office for national statistics
+National Records of Scotland|NRS
+GERS|general expenditure and revenue scotland
+religion|PLURAL
+Barnett formula|barnett
+poverty|see absolute, relative or extreme poverty
+inflation|see CPI or deflator
+inequality|see income or wealth inequality
+SIMD|single index of multiple deprivation
+polling|poll|PLURAL|pollsters
+Thomas Piketty|Piketty
+Bank of England
+Ireland
+economics|economist|PLURAL
+economist|see economics
+United States
+Eurozone
+whisky
+salmon
+independence|pro-independence|anti-independence
+farming|farm|PLURAL|farmer|PLURAL
+fish|fishing|fishermen
+environment
+global warming|see climate change
+climate change|global warming|greenhouse effect
+London
+Edinburgh
+Glasgow
+nuclear
+coal
+defence
+NHS
