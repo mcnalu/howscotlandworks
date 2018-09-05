@@ -1,0 +1,16 @@
+,Scotland,UK
+Income tax,2361,2680
+National insurance,1918,1918
+Value added tax,1886,1851
+Gross operating surplus,800,725
+Onshore Corporation tax,723,841
+Fuel duties,437,426
+Non-domestic rates,505,447
+Council tax,385,465
+Everything else,1707,1682
+-META-,,
+YAXISTITLE,Revenue per person 2016-17 / £,
+BOTTOMPADDING,100,
+BARS,TRUE,
+LEFTPADDING,40,
+#check,0.00,-0.01

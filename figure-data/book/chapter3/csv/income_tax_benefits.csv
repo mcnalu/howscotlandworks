@@ -1,0 +1,13 @@
+Average per household (£ per year),Original income,Disposable income,Final income
+1,7153 ,13139 ,17178 
+2,13877,20877,24439
+3,26983,28552,30096
+4,43261,38838,38032
+5,84747,67486,63279
+-META-,,,
+YAXISTITLE,Average annual income per household 2015-16 / £,,
+BARS,TRUE,,
+LEFTPADDING,60,,
+XROTATE,0,,
+#ratios 5:1,11.8,5.1,3.7
+FILLPATTERNED,2,,

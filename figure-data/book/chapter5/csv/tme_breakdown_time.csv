@@ -1,0 +1,15 @@
+Year,Health,Local government (inc police & fire),Local government (exc police & fire),Scottish public pensions agency,Education & training,Justice (exc police & fire)
+2008-09,11.91,12.69,,2.88,2.93,1.16
+2009-10,12.22,13.22,,2.68,3.21,1.17
+2010-11,12.30,12.86,,3.23,3.09,1.57
+2011-12,12.29,12.28,,3.24,2.90,1.43
+2012-13,12.32,11.92,,2.72,2.99,1.47
+2013-14,12.33,12.34,10.77,2.77,3.00,1.11
+2014-15,12.32,12.55,11.05,3.72,3.13,1.24
+2015-16,12.71,12.63,11.12,3.51,3.17,1.06
+2016-17,13.20,11.80,10.34,3.30,3.18,1.10
+-META-,,,,,,
+YAXISTITLE,Expenditure real / £ billion (2016-17 prices),,,,,
+LEGENDX,2008-09,,,,,
+LEGENDY,9.7,,,,,
+SYMBOLS,TRUE,,,,,

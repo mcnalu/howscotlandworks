@@ -1,0 +1,36 @@
+,EU,UK
+Netherlands,493,0
+England,0,407
+Belgium,361,0
+Germany,229,0
+Italy,205,0
+Luxembourg,198,0
+Wales,0,148
+Czech Republic,136,0
+Northern Ireland,0,133
+Denmark,129,0
+Poland,122,0
+Portugal,116,0
+Slovakia,110,0
+Hungary,107,0
+France,103,0
+Austria,102,0
+Slovenia,102,0
+Romania,93,0
+Spain,92,0
+Cyprus,91,0
+Greece,86,0
+Scotland,0,68
+Bulgaria,66,0
+Ireland,66,0
+Lithuania,52,0
+Latvia,33,0
+Estonia,31,0
+Sweden,23,0
+Finland,18,0
+-META-,,
+YAXISTITLE,Density (usual residents per square kilometre),
+BARS,TRUE,
+STACKED,TRUE,
+LEGEND,FALSE,
+BOTTOMPADDING,50,

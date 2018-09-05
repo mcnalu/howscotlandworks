@@ -1,0 +1,42 @@
+,General revenue,NDR,Council Tax,Other
+Shetland Islands,3024,728,366,2070
+Western Isles,3475,294,349,978
+Orkney Islands,2812,434,361,1432
+Glasgow City,1444,622,304,1223
+Argyll & Bute,2025,320,498,705
+Inverclyde,1860,299,350,893
+West Dunbartonshire,1202,935,342,899
+Dundee City,1604,408,321,919
+North Ayrshire,1726,316,351,802
+Dumfries & Galloway,1642,340,376,806
+Clackmannanshire,1592,309,363,769
+SCOTLAND AVERAGE,1322,516,380,757
+East Ayrshire,1639,269,339,718
+South Ayrshire,1455,380,414,694
+Highland,1411,543,445,527
+"Edinburgh, City of",699,771,427,1015
+Renfrewshire,1203,585,376,731
+Scottish Borders,1557,294,407,592
+East Renfrewshire,1763,176,447,439
+Midlothian,1405,359,399,661
+South Lanarkshire,820,996,355,650
+Stirling,1317,484,443,561
+Falkirk,1400,391,341,650
+East Dunbartonshire,1519,234,468,549
+Fife,1292,450,367,638
+Angus,1517,264,365,588
+North Lanarkshire,1498,361,299,563
+East Lothian,1418,251,411,606
+Perth & Kinross,1289,394,461,535
+West Lothian,1210,523,338,510
+Aberdeenshire,1237,351,449,533
+Aberdeen City,568,914,462,624
+Moray,1296,383,369,472
+-META-,,,,
+YAXISTITLE,Gross revenue expenditure per person 2015-16 / £,,,
+BARS,TRUE,,,
+STACKED,TRUE,,,
+BOTTOMPADDING,80,,,
+LEFTPADDING,40,,,
+STACKEDLEGENDRIGHT,TRUE,,,
+RIGHTPADDING,100,,,

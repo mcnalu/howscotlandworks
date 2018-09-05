@@ -1,0 +1,16 @@
+,Male,Both,Female
+Scotland full-time,30334,28354,25585
+Scotland part-time,9990,10474,10552
+UK full-time,31103,28758,25308
+UK part-time,9603,9867,9922
+-META-,,,
+BARS,TRUE,,
+YAXISTITLE,Median annual gross earnings 2017 / £,,
+BOTTOMPADDING,60,,
+LEFTPADDING,50,,
+#Scot FT gap,4749,,
+#Scot PT gap,-562,,
+#UK FT gap,5795,,
+#UK PT gap,-319,,
+#source,https://www.ons.gov.uk/employmentandlabourmarket/peopleinwork/earningsandworkinghours/datasets/regionbyoccupation2digitsocashetable3,,
+#file,Table 3.7a,,
