@@ -1,0 +1,23 @@
+#!/bin/bash
+
+#Process all seven chapters with csv2png
+#Takes one option which is passed on to csv2png, for example
+#   ./all_csv2png
+#   ./all_csv2png grey
+
+opt=""
+if [ $# -gt 0 ]
+then
+    opt=$1
+fi
+
+dirs=(1 2 3 4 5 6 7)
+
+count=0
+while [ "x${dirs[count]}" != "x" ]
+do
+   echo ${dirs[count]}
+   ./csv2png ${dirs[count]} $opt
+   count=$(( $count + 1 ))
+done
+

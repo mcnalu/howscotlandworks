@@ -1,6 +1,11 @@
 # howscotlandworks
 Content and code for my book How Scotland Works
 
+Some scripts need to know where the howscotlandworks folder is located so make sure to set the HSW_ROOT to its location, eg
+
+```bash
+export HSW_ROOT=/home/andrew/dev/howscotlandworks
+```
 Content in this repository is covered by one or other of the following licenses:
 
 - Any software source code in including but not limited to javascript, bash script, python, C, Java, Python is licensed under the [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html).

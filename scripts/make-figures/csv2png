@@ -1,0 +1,73 @@
+#!/bin/bash
+
+#A few ways to use this:
+#To test: ./csv2png tests test
+#To process a dir with CSVs in it: ./csv2png /foo/bar
+#To process chapter3_images and touch chapter3.markdown: ./csv2png 3
+#To create greyscale images: ./csv2png 3 grey
+#To just create png from existing svg files: ./csv2png 3 pngonly
+
+#If a single number is given as an argument then script will look for CSVs there.
+#Eg, if 7 is given then CSVs are assumed to be in $APATH/chapter7_images/csv
+APATH=$HSW_ROOT/figure-data/book
+
+#If not a single number then arg must be full path to dir containing CSV files
+CSVPATH=$1
+
+# See below for what $TEXTPATH was used for
+TEXTPATH=""
+
+# The size of the resulting PNG file.
+# This is known to be working in imagemagick 6.9.10-3 but was ignored in at least one older version.
+SIZE=1500
+
+test=0
+pngonly=0
+re='^[0-9]+$'
+if [[ $1 =~ $re ]]
+then
+   CSVPATH="$APATH/chapter$1/csv"
+#   TEXTPATH="$APATH/print/chapter$1.markdown"
+elif [ $# -gt 1 ] && [ $2 = "test" ]
+then
+    test=1
+fi
+
+if [ ! -d $CSVPATH ]; then
+  echo The CSV dir does not exist: $CSVPATH 
+  exit 1
+fi
+
+
+
+if [ $# -gt 1 ] && [ $2 = "pngonly" ]
+then
+    pngonly=1
+fi
+
+grey=""
+if [ $# -gt 1 ] && [ $2 = "grey" ]
+then
+    grey="grey"
+fi
+
+for f in $CSVPATH/*.csv
+do
+    n=${f%.csv}
+    echo "Processing $n"
+    if [ $pngonly -eq 0 ]
+    then
+        node node2svg.js $n.csv $grey > $n.svg
+    fi
+    convert -size $SIZE $n.svg $n.png
+    if [ $test -eq 1 ]
+    then
+        display $n.png
+        rm $n.svg $n.png
+    fi
+done
+
+#This was to trigger rebuilding of book text but not needed here.
+#if ! [ -z $TEXTPATH ]; then
+#    touch $TEXTPATH
+#fi

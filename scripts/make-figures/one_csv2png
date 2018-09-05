@@ -1,0 +1,40 @@
+#!/bin/bash
+
+#A few ways to use this:
+#./one_csv2png CSVFILE : converts that one file to svg and png
+#./one_csv2png CSVFILE test : opens in a window, deleted svg png afterwards
+#./one_csv2png CSVFILE grey : uses greys instead of colour
+# testgrey does both options
+
+
+
+test=0
+grey=""
+if [ $# -gt 1 ] && [ $2 = "test" ]
+then
+    test=1
+fi
+
+if [ $# -gt 1 ] && [ $2 = "grey" ]
+then
+    grey="grey"
+fi
+
+if [ $# -gt 1 ] && [ $2 = "testgrey" ]
+then
+    grey="grey"
+    test=1
+fi
+
+f=$1
+
+n=${f%.csv}
+echo "Processing $n"
+node node2svg.js $n.csv $grey > $n.svg
+convert -size 1500 $n.svg $n.png
+
+if [ $test -eq 1 ]
+then
+    display $n.png
+    rm $n.svg $n.png
+fi

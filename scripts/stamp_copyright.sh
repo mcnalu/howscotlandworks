@@ -3,11 +3,28 @@
 #Set according to whether greyscale or colour
 ISCOLOUR=0
 
+#HSW_ROOT must point to a dir containing book-figure-images
 #SRC must point to where chapter?_images dirs are as appropritate to ISCOLOUR
 #DEST must point to a dir containing a colour or bw dir as appropritate to ISCOLOUR
 
-#SRC=/home/nalu/Downloads/howscotlandworks
 
+if [ $# -ne 1 ]; then
+  echo Usage: $0 path-to-source-dir
+  exit 666
+fi
+
+SRC=$1
+DEST=$HSW_ROOT/book-figure-images
+
+if [ ! -d $SRC ]; then
+  echo The source dir does not exist: $SRC 
+  exit 1
+fi
+
+if [ ! -d $DEST ]; then
+  echo The destination dir does not exist: $DEST
+  exit 2
+fi
 
 if [ $ISCOLOUR -eq 1 ]
 then

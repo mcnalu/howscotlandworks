@@ -1,0 +1,15 @@
+,Home internet access,No home internet access
+"£0-£6,000",68.162,31.838
+"£6,001-£10,000",59.151,40.849
+"£10,001-£15,000",64.766,35.234
+"£15,001-£20,000",75.432,24.283
+"£20,001-£25,000",89.766,10.021
+"£25,001-£30,000",93.73,6.27
+"£30,001-£40,000",98.096,1.617
+"Over £40,000",98.038,1.962
+-META-,,
+YAXISTITLE,Percentage,
+XAXISTITLE,Household net income,
+BARS,TRUE,
+STACKED,TRUE,
+BOTTOMPADDING,80,
