@@ -84,8 +84,13 @@ file.close()
 for page in range(pageStart, pageEnd):
   spage=str(page)
   #to lower case and remove non-alphanumeric characters
-  contents=subprocess.check_output(['pdftotext','-f',spage,'-l',spage,filename,'-']).lower()
-  contents = re.sub("[^a-zA-Z \n\r]","", contents.replace("\n"," "))
+  contents=subprocess.check_output(['pdftotext','-eol','unix','-f',spage,'-l',spage,filename,'-']).lower()
+  contents=contents.replace("\n"," ")
+  contents=contents.replace("\r"," ")
+  contents = re.sub("[^a-zA-Z \n\r]","", contents)
+  #remove multiple spaces
+  contents = re.sub(" +"," ", contents)
+  #print contents
   for term, index in terms.iteritems():
     if isPresent(contents,term):
       index.append(page)
