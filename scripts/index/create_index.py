@@ -2,6 +2,7 @@
 
 import re
 import subprocess
+import string
 
 #Note pdftotext must be present in the OS path
 #Windows and mac downloads are here: https://www.xpdfreader.com/
@@ -88,6 +89,8 @@ for page in range(pageStart, pageEnd):
   contents=contents.replace("\n"," ")
   contents=contents.replace("\r"," ")
   contents = re.sub("[^a-zA-Z \n\r]","", contents)
+  #Removes non printable chars, but doesn't seem to be necessary
+  #contents = filter(lambda x: x in string.printable, contents)
   #remove multiple spaces
   contents = re.sub(" +"," ", contents)
   #print contents
