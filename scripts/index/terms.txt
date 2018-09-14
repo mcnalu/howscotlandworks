@@ -1,3 +1,5 @@
+PDF FILE example.pdf
+INDEX PAGES 11 to 299
 employment
 unemployment
 economic activity rate|inactivity

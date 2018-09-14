@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#No longer needed but left it here in case it is useful
+
 mkdir -p pages
 
 PDF=/path/to/file.pdf
