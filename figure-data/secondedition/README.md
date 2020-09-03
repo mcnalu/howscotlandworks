@@ -5,4 +5,6 @@ The figures inside directories below this were used to construct most of the fig
 
 Figures that were not updated will not be in the secondedition directory, see the firstedition direcory.
 
-AJC 18dec2020
+The **misc** directory contains data used in many different chapters including CPI and CPIH from the ONS and GDP deflators.
+
+AJC 3Sept2020
