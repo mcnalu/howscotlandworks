@@ -1,5 +1,5 @@
 *~
-.directory
+.*
 scripts/make-figures/d3
 scripts/make-figures/node_modules
 scripts/index/pages
