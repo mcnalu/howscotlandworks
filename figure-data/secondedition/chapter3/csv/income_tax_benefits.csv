@@ -1,0 +1,13 @@
+Average per household (£ per year),Original income,Disposable income,Final income
+1,"7,685","13,115","18,961"
+2,"16,950","21,737","26,429"
+3,"29,938","29,695","31,958"
+4,"46,129","39,764","39,886"
+5,"104,992","75,331","71,449"
+-META-,,,
+YAXISTITLE,Average annual income per household 2018-19 / £,,
+BARS,TRUE,,
+LEFTPADDING,60,,
+XROTATE,0,,
+#ratios 5:1,13.7,5.7,3.8
+FILLPATTERNED,2,,

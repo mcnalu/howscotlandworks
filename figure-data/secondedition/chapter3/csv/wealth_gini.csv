@@ -1,0 +1,11 @@
+Wealth type ,Gini 
+Property (net),66
+Financial (net),88
+Physical ,45
+Pension ,71
+Overall,62
+-META-,
+YAXISTITLE,Gini index for household wealth
+BARS,TRUE
+XROTATE,0
+LEGEND,FALSE
