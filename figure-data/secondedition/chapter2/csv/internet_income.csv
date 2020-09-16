@@ -1,0 +1,15 @@
+,Internet user,Does not use
+"Up to £6,000",81,19
+"£6,001-£10,000",66,34
+"£10,001-£15,000",72,28
+"£15,001-£20,000",80,20
+"£20,001-£25,000",85,15
+"£25,001-£30,000",93,7
+"£30,001-£40,000",96,4
+"Over £40,000",99,1
+-META-,,
+YAXISTITLE,Percentage,
+XAXISTITLE,Household net income,
+BARS,TRUE,
+STACKED,TRUE,
+BOTTOMPADDING,80,
