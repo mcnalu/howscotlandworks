@@ -21,6 +21,9 @@
  * //- add support for stacked column bars
  */
 
+d3 = require('d3');
+exports.d3=d3;
+
 var NOTSET="-NOTSET-";
 var CATEGORY="CATEGORY", LINEAR="LINEAR", DATE="DATE"; //xScaleType
 var width = 1000;
@@ -82,7 +85,7 @@ var scales=[];
 //Calculated later after data and so leftPadding loaded.
 var plotAreaWidth;
 
-rowConverter = function(d, i, colNames) {
+exports.rowConverter = function(d, i, colNames) {
         if(scales.length==0){
             scales = new Array(colNames.length+1).fill(0);
         }
@@ -222,7 +225,7 @@ function definedOrZero(x){
     return (x==0 || x);
 }
 
-createSVG = function(data, isGrey) {
+exports.createSVG = function(body,data, isGrey) {
     if(isGrey){
       colors=colors_grey;
       barLineColour=barLineColour_grey;
@@ -296,8 +299,7 @@ createSVG = function(data, isGrey) {
     }
         
                 
-    var svg = d3.select("body")
-                .append("svg")
+    var svg = body.append("svg")
                 .attr("width",width)
                 .attr("height",height);
     
@@ -430,7 +432,7 @@ createSVG = function(data, isGrey) {
         makeStackedBarLegend(svg.append("g"),data.columns,padding
             ,Math.min(barWidth,maxBarWidthLegend),data, yScales); 
     }
-    return d3.select("body").html();
+    return body.html();
 }
 
 
