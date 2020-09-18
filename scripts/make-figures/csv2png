@@ -1,15 +1,18 @@
 #!/bin/bash
 
+#This script takes CSV files and turns them into SVG and then into PNG files.
+#The SVG and PNG files are created in the same directory as the original CSV file.
+
 #A few ways to use this:
 #To test: ./csv2png tests test
 #To process a dir with CSVs in it: ./csv2png /foo/bar
-#To process chapter3_images and touch chapter3.markdown: ./csv2png 3
+#To process chapter3_images: ./csv2png 3
 #To create greyscale images: ./csv2png 3 grey
 #To just create png from existing svg files: ./csv2png 3 pngonly
 
 #If a single number is given as an argument then script will look for CSVs there.
 #Eg, if 7 is given then CSVs are assumed to be in $APATH/chapter7_images/csv
-APATH=$HSW_ROOT/figure-data/book
+APATH=$HSW_ROOT/figure-data/secondedition
 
 #If not a single number then arg must be full path to dir containing CSV files
 CSVPATH=$1
@@ -23,10 +26,12 @@ SIZE=1500
 
 test=0
 pngonly=0
+chapter=0
 re='^[0-9]+$'
 if [[ $1 =~ $re ]]
 then
    CSVPATH="$APATH/chapter$1/csv"
+   chapter=1
 #   TEXTPATH="$APATH/print/chapter$1.markdown"
 elif [ $# -gt 1 ] && [ $2 = "test" ]
 then
@@ -66,6 +71,22 @@ do
         rm $n.svg $n.png
     fi
 done
+
+if [ -z "$HSW_OUT" ]
+then
+  echo "SVG and/or PNG files left in same dir as CSV files."
+else
+  OUT=$HSW_OUT
+  if [ $chapter -eq 1 ]
+  then
+    OUT=$HSW_OUT/chapter$1
+  fi
+  mkdir -p $OUT/svg
+  mkdir -p $OUT/png
+  mv $CSVPATH/*.svg $OUT/svg
+  mv $CSVPATH/*.png $OUT/png
+  echo "Copied SVG and PNG files to $HSW_OUT."
+fi
 
 #This was to trigger rebuilding of book text but not needed here.
 #if ! [ -z $TEXTPATH ]; then
