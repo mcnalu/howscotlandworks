@@ -1,0 +1,19 @@
+,Scotland,UK
+Income tax (gross of tax credits),2383,2924
+National insurance contributions,2098,2159
+Value added tax,2016,2003
+       Gross operating surplus,1152,806
+Onshore Corporation tax,582,763
+Fuel duties,438,413
+Non-domestic rates,505,481
+Council tax,455,548
+Everything else,2429,2269
+-META-,,
+YAXISTITLE,Revenue per person 2019-20 / £,
+BOTTOMPADDING,100,
+BARS,TRUE,
+LEFTPADDING,40,
+#check,0.01,0.00
+#top3,53.9%,57.3%
+#companies,9.02%,10.06%
+#GOS,9.55%,6.52%
