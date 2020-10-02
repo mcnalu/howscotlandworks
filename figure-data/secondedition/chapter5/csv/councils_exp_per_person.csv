@@ -1,0 +1,42 @@
+,General revenue,NDR,Council Tax,Other
+Shetland Islands,"2,524","1,061",417,"3,011"
+Orkney Islands,"2,718",429,412,"1,945"
+Western isles,"3,305",294,406,"1,211"
+Argyll & Bute,"1,892",392,592,886
+West Dunbartonshire,"1,201",904,388,"1,267"
+Glasgow City,"1,403",549,355,"1,444"
+Dundee City,"1,606",379,361,"1,141"
+Inverclyde,"1,872",241,379,911
+North Ayrshire,"1,727",299,408,954
+South Ayrshire,"1,439",347,494,888
+Clackmannanshire,"1,535",303,422,867
+Renfrewshire,"1,044",684,429,962
+SCOTLAND AVERAGE,"1,285",492,444,898
+Dumfries & Galloway,"1,617",303,437,756
+East Ayrshire,"1,633",218,401,846
+Highland,"1,345",547,519,686
+City of Edinburgh,707,662,504,"1,155"
+Stirling,"1,319",458,516,718
+Scottish Borders,"1,497",290,486,726
+East Renfrewshire,"1,740",153,535,536
+Midlothian,"1,395",310,474,756
+Fife,"1,279",421,427,796
+Falkirk,"1,315",418,404,779
+Angus,"1,512",220,421,734
+South Lanarkshire,802,940,412,707
+North Lanarkshire,"1,485",312,338,702
+East Dunbartonshire,"1,518",205,567,545
+Aberdeenshire,"1,171",432,545,658
+Perth & Kinross,"1,288",349,535,620
+West Lothian,"1,275",442,384,689
+Aberdeen City,421,"1,016",520,747
+Moray,"1,230",427,437,604
+East Lothian,"1,385",226,498,547
+-META-,,,,
+YAXISTITLE,Gross revenue expenditure per person 2018-19 / £ (2019-20 prices),,,
+BARS,TRUE,,,
+STACKED,TRUE,,,
+BOTTOMPADDING,80,,,
+LEFTPADDING,40,,,
+STACKEDLEGENDRIGHT,TRUE,,,
+RIGHTPADDING,100,,,
