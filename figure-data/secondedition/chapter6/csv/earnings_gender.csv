@@ -1,0 +1,14 @@
+,Male,Both,Female
+Scotland full-time,32089,30000,26951
+Scotland part-time,10175,11093,11297
+UK full-time,32882,30353,26774
+UK part-time,10400,10587,10622
+-META-,,,
+BARS,TRUE,,
+YAXISTITLE,Median annual gross earnings 2019 / £,,
+BOTTOMPADDING,60,,
+LEFTPADDING,50,,
+#Scot FT gap,5138,,
+#Scot PT gap,-1122,,
+#UK FT gap,6108,,
+#UK PT gap,-222,,
