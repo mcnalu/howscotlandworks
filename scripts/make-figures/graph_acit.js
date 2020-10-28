@@ -1,4 +1,7 @@
 /*
+ * To print output to console:
+ *    console.error(yScales[is](0));
+ * 
  * To do:
  * //- add axis labels
  * //- add legend
@@ -16,7 +19,7 @@
  * - add unit support eg so data can be in mn but converted to bn for axis
  * //- add switch for lines and symbols
  * //- setting of secondary scale
- * - ensure primary and secondary scales align
+ * //- ensure primary and secondary scales align - AJC: don't use .nice()!
  * //- add support for multi column bars
  * //- add support for stacked column bars
  */
@@ -267,10 +270,10 @@ exports.createSVG = function(body,data, isGrey) {
         } else {//Otherwise default to zero
             dmin=0.0;
         }
-             
+        //Removed .nice() on this because second axis could misalign with first.     
         yScales[is] = d3.scaleLinear()
                     .domain([dmin,dmax])
-                    .range([height-padding-bottomPadding-topPadding,padding+topPadding]).nice();
+                    .range([height-padding-bottomPadding-topPadding,padding+topPadding]);
     }
 
     var xScale;
