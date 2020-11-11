@@ -1,16 +1,17 @@
 ,Median wealth
-1,7500
-2,28400
-3,62100
-4,115900
-5,185900
-6,285600
-7,414700
-8,604000
-9,922700
-10,1640600
+1,0.0075
+2,0.0284
+3,0.0621
+4,0.1159
+5,0.1859
+6,0.2856
+7,0.4147
+8,0.604
+9,0.9227
+10,1.6406
 -META-,
-YAXISTITLE,Median wealth / £ billion (real 2016-18 prices)
+YAXISTITLE,Median wealth / £ million (real 2016-18 prices)
 BARS,TRUE
 XROTATE,0
 LEGEND,FALSE
+#link,https://data.gov.scot/wealth/2020report.html#21_wealth_distribution

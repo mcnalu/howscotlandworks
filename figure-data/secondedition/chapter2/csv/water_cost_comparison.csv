@@ -1,17 +1,19 @@
-Water & sewerage company,Average household bill 2019-20,E&W,Scotland
-South West,£491,,
-Wessex,£485,,
-Welsh,£444,,
-United Utilities,£441,,
-Anglian,£440,,
-Southern,£438,,
-England & Wales average,,£415,
-Northumbrian,£409,,
-Yorkshire,£401,,
-Thames,£398,,
-Scottish Water,,,£369
-Severn Trent,£354,,
-,,,
-p23,,,
-https://www.scottishwater.co.uk/help-and-resources/document-hub/key-publications/annual-reports,,,
-Note: this table contains published values for the next financial year AFTER the report,,,
+Water & sewerage company,Average household bill 2017/18,E&W,Scotland
+South West,491,0,0
+Wessex,485,0,0
+Welsh,444,0,0
+United Utilities,441,0,0
+Anglian,440,0,0
+Southern,438,0,0
+Eng & Wales average,0,415,0
+Northumbrian,409,0,0
+Yorkshire,401,0,0
+Thames,398,0,0
+Scottish Water,0,0,369
+Severn Trent,354,0,0
+-META-,,,
+YAXISTITLE,Average household water bill 2019-20,,
+BARS,TRUE,,
+STACKED,TRUE,,
+BOTTOMPADDING,70,,
+LEGEND,FALSE,,

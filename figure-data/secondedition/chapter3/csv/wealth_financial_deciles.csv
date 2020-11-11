@@ -1,15 +1,16 @@
 ,2016-18
-1,-11000
-2,-2200
-3,0
-4,1000
-5,3200
-6,8000
-7,18500
-8,38500
-9,81100
-10,215000
+1,-11.0
+2,-2.2
+3,0.0
+4,1.0
+5,3.2
+6,8.0
+7,18.5
+8,38.5
+9,81.1
+10,215.0
 -META-,
-YAXISTITLE,Median financial wealth (net) / £ billion (real 2016-18 prices)
+YAXISTITLE,Median financial wealth (net) / £ thousand (real 2016-18 prices)
 BARS,TRUE
 XROTATE,0
+#link,https://data.gov.scot/wealth/2020report.html#3_financial_wealth_and_debt

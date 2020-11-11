@@ -3,3 +3,6 @@
 scripts/make-figures/d3
 scripts/make-figures/node_modules
 scripts/index/pages
+
+figure-data/*edition/chapter?/csv/*.png
+figure-data/*edition/chapter?/csv/*.svg

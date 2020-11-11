@@ -1,19 +1,20 @@
 ,1999,2018
-London,"33,029","38,146"
-South East,"27,521","30,849"
-England,"26,349","29,856"
-United Kingdom,"26,149","29,559"
-Scotland,"24,843","29,289"
-East,"26,438","29,153"
-South West,"24,569","27,956"
-West Midlands,"24,969","27,682"
-North West,"24,936","27,376"
-Northern Ireland,"23,204","27,101"
-Yorkshire and The Humber,"24,275","26,892"
-East Midlands,"24,076","26,711"
-North East,"23,915","26,355"
-Wales,"24,172","26,353"
+London,"33,621","38,830"
+South East,"28,015","31,402"
+England,"26,821","30,392"
+United Kingdom,"26,618","30,089"
+Scotland,"25,289","29,814"
+East,"26,913","29,676"
+South West,"25,009","28,458"
+West Midlands,"25,417","28,179"
+North West,"25,383","27,867"
+Northern Ireland,"23,620","27,587"
+Yorkshire and The Humber,"24,710","27,374"
+East Midlands,"24,508","27,190"
+North East,"24,344","26,828"
+Wales,"24,606","26,826"
 -META-,,
-YAXISTITLE,Median annual gross earnings / £ (real 2018 prices),
+YAXISTITLE,Median annual gross earnings / £ (real 2019 prices),
 BARS,TRUE,
 BOTTOMPADDING,100,
+LEFTPADDING,50,

@@ -63,6 +63,7 @@ var yAxisTitle=["Primary y axis","Secondary y axis"];
 var isMetaSection=false;
 var ymin=[NaN,NaN];
 var ymax=["auto","auto"];
+var isNice=true;
 var legendx=NOTSET;
 var legendy=NOTSET;
 var xScaleType=CATEGORY;
@@ -102,7 +103,10 @@ exports.rowConverter = function(d, i, colNames) {
             var obj ={};
             obj[colNames[0]]=firstCol;
             for(j=1;j<colNames.length;j++){
-                obj[colNames[j]]=parseFloat(d[colNames[j]]);
+	      	//console.error(d[colNames[j]];
+	        //Replace thousand commas but not locale safe
+                obj[colNames[j]]=parseFloat(d[colNames[j]].replace(/,/g, ''));
+		//console.error(obj[colNames[j]]);
             }
             return obj;
         } else {
@@ -124,22 +128,25 @@ exports.rowConverter = function(d, i, colNames) {
                 scales[secCol]=1;
                 break;
                 case "YMIN":
-                ymin[0]=secCol;
+                ymin[0]=parseFloat(secCol);
                 break;
                 case "YMAX":
-                ymax[0]=secCol;
+                ymax[0]=parseFloat(secCol);
                 break;
                 case "YMIN2":
-                ymin[1]=secCol;
+                ymin[1]=parseFloat(secCol);
                 break;
                 case "YMAX2":
-                ymax[1]=secCol;
+                ymax[1]=parseFloat(secCol);
+                break;
+		case "NICE":
+                isNice=(secCol.toLowerCase()=="true");
                 break;
                 case "LEGENDX":
                 legendx=secCol;
                 break;
                 case "LEGENDY":
-                legendy=secCol;
+                legendy=parseFloat(secCol);
                 break;
                 case "LEGEND":
                 isLegendShown=(secCol.toLowerCase()=="true");
@@ -270,10 +277,13 @@ exports.createSVG = function(body,data, isGrey) {
         } else {//Otherwise default to zero
             dmin=0.0;
         }
-        //Removed .nice() on this because second axis could misalign with first.     
+        //Disable .nice() as it can cause second axis to misalign with first.
         yScales[is] = d3.scaleLinear()
                     .domain([dmin,dmax])
                     .range([height-padding-bottomPadding-topPadding,padding+topPadding]);
+	if(isNice){
+	  yScales[is]=yScales[is].nice();
+	}
     }
 
     var xScale;
@@ -354,7 +364,7 @@ exports.createSVG = function(body,data, isGrey) {
                 isToDoStackedLegendLater=true;              
             }
             else {
-                makeBarLegend(svg.append("g"),data.columns,padding
+                makeBarLegend(svg.append("g"),data.columns,padding+leftPadding
                     ,Math.min(barWidth,maxBarWidthLegend));
             }
         }
