@@ -71,6 +71,7 @@ var parseDate = d3.timeParse("%d-%b-%y");//03-mar-13
 var isLegendShown=true;
 var isSymbols=false;
 var isLines=true;
+var isXgrid=false;
 var isBars=false;
 var barsLineCol=NaN;
 var isStacked=false;
@@ -88,6 +89,7 @@ var scales=[];
 
 //Calculated later after data and so leftPadding loaded.
 var plotAreaWidth;
+var plotAreaHeight;
 
 exports.rowConverter = function(d, i, colNames) {
         if(scales.length==0){
@@ -153,6 +155,9 @@ exports.rowConverter = function(d, i, colNames) {
                 break;
                 case "LINES":
                 isLines=(secCol.toLowerCase()=="true");
+                break;
+		case "XGRID":
+                isXgrid=(secCol.toLowerCase()=="true");
                 break;
                 case "SYMBOLS":
                 isSymbols=(secCol.toLowerCase()=="true");
@@ -245,6 +250,7 @@ exports.createSVG = function(body,data, isGrey) {
     }
     var xName=data.columns[0];
     plotAreaWidth=width-2*padding-leftPadding-rightPadding;
+    plotAreaHeight=height-2*padding-topPadding-bottomPadding;
     if(!isBars){isStacked=false;}//stacked is only for bars just now
     var yScales = [];
     var isSecondaryScale= !isStacked && scales.includes(1);
@@ -557,12 +563,27 @@ function getTickLabel(isLabels,d,i){
 
 function makeXAxis(svg,xScale,yPos,xName,isLabels){ 
     var xAxis;
+    var xGrid;
     if(xScaleType==DATE){
-        xAxis = d3.axisBottom(xScale);
+        xAxis = d3.axisBottom().scale(xScale);
+	xGrid = d3.axisBottom().scale(xScale);
     } else {
         xAxis = d3.axisBottom().scale(xScale).ticks(5);
+	xGrid = d3.axisBottom().scale(xScale).ticks(5);
     }
     var xAxisGroup = svg.append("g").attr("id","xAxisGroup");
+    
+    if(isXgrid){
+      xGrid=xGrid.tickFormat("").tickSize(-plotAreaHeight);
+      xAxisGroup.append("g")//grid lines only for primary axis
+	      .attr("class","xgrid")
+	      .call(xGrid);
+      xAxisGroup.selectAll(".xgrid line")
+	  .attr("stroke",gridStrokeColor);
+      xAxisGroup.selectAll(".xgrid path")//Stops a big line appearing at the top
+	  .attr("stroke-width",0);
+    }
+    
     var dx=Math.sin(xRotate)*parseInt(legendFontSize)/2;
     var dy=parseInt(legendFontSize)/5;
     var textAnchor="end";
