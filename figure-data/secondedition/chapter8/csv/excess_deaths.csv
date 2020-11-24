@@ -1,4 +1,13 @@
 Mid-date of NRS week,COVID-19 deaths,Excess deaths
+02-Jan-20,,-115
+09-Jan-20,,7.40000000000009
+16-Jan-20,,-60
+23-Jan-20,,-90.5999999999999
+30-Jan-20,,-91.5999999999999
+06-Feb-20,,-37.8
+13-Feb-20,,-97.2
+20-Feb-20,,-84.8
+27-Feb-20,,6.20000000000005
 05-Mar-20,0,-20.5999999999999
 12-Mar-20,0,29
 19-Mar-20,11,75.5999999999999
@@ -43,3 +52,10 @@ LEFTPADDING,0,
 BOTTOMPADDING,20,
 XGRID,TRUE,
 LEGENDY,780,
+#total difference,58,
+#pre-first peak diff,-563,
+#first peak diff,902,19%
+#post first peak diff,-280,
+#check,0,
+#totals,5135,5193
+#first peak,"3,914","4,816"
