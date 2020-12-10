@@ -36,6 +36,9 @@ Date of middle of summed over week,People tested positive,People tested
 28-Oct-20,8464,46792
 04-Nov-20,8415,46492
 11-Nov-20,7807,45391
+18-Nov-20,7382,47558
+25-Nov-20,6426,43958
+02-Dec-20,5520,45186
 -META-,,
 XSCALETYPE,DATE,
 YAXISTITLE,Weekly total of people testing positive,
@@ -43,7 +46,9 @@ YAXISTITLE2,Weekly total of people tested,
 USEYAXIS2,2,
 LEFTPADDING,60,
 RIGHTPADDING,60,
-LEGEND,FALSE,
 BOTTOMPADDING,20,
+TOPPADDING,20,
+LEGENDY,12000,
 #checks,0,0
 XGRID,TRUE,
+#note this data is by reported date,,

@@ -1,4 +1,4 @@
-Date of middle of summed over week,People tested positive
+Date of middle of summed over week,Percentage of people testing positive each week
 04-Mar-20,0.95%
 11-Mar-20,5.16%
 18-Mar-20,5.55%
@@ -36,6 +36,9 @@ Date of middle of summed over week,People tested positive
 28-Oct-20,18.09%
 04-Nov-20,18.10%
 11-Nov-20,17.20%
+18-Nov-20,15.52%
+25-Nov-20,14.62%
+02-Dec-20,12.22%
 -META-,
 XSCALETYPE,DATE
 YAXISTITLE,Percentage of people testing positive each week

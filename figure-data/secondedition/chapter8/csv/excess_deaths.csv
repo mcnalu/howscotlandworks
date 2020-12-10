@@ -15,7 +15,7 @@ Mid-date of NRS week,COVID-19 deaths,Excess deaths
 02-Apr-20,282,645.6
 09-Apr-20,609,878.2
 16-Apr-20,650,848.8
-23-Apr-20,661,749.2
+23-Apr-20,662,749.2
 30-Apr-20,527,599.6
 07-May-20,415,400.8
 14-May-20,336,357
@@ -40,11 +40,14 @@ Mid-date of NRS week,COVID-19 deaths,Excess deaths
 24-Sep-20,10,-113.4
 01-Oct-20,20,158.2
 08-Oct-20,25,-7.79999999999995
-15-Oct-20,75,69
+15-Oct-20,76,72
 22-Oct-20,106,134.6
 29-Oct-20,168,182.8
 05-Nov-20,207,145
-12-Nov-20,278,189.8
+12-Nov-20,279,198.8
+19-Nov-20,246,229.8
+26-Nov-20,252,197.6
+03-Dec-20,232,143.4
 -META-,,
 XSCALETYPE,DATE,
 YAXISTITLE,Deaths,
@@ -52,10 +55,11 @@ LEFTPADDING,0,
 BOTTOMPADDING,20,
 XGRID,TRUE,
 LEGENDY,780,
-#total difference,58,
+#total difference,67,
 #pre-first peak diff,-563,
-#first peak diff,902,19%
-#post first peak diff,-280,
+#first peak diff,901,19%
+#post first peak diff,-270,
 #check,0,
-#totals,5135,5193
-#first peak,"3,914","4,816"
+#totals,5138,5205
+#first peak,"3,915","4,816"
+#march to now,631,
